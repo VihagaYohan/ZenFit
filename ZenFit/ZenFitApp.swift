@@ -11,7 +11,10 @@ import SwiftUI
 struct ZenFitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                OnboardingPage()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
